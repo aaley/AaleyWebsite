@@ -1,0 +1,22 @@
+body{
+	background-color:pink;
+}
+#name{
+	display:block;
+	position:absolute;
+	top: 500px;
+	left: 500px;
+	font-size:42px;
+	transition:all linear 0.5s;
+	-webkit-animation: updown 3s linear infinite;
+}
+
+@-webkit-keyframes updown{
+	from {top 500px;}
+	to {top 700px;}
+
+}
+
+#name:hover{
+	transform:rotateZ(180deg);
+}
